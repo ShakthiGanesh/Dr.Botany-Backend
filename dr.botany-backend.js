@@ -3,6 +3,7 @@ const cors = require('cors');
 const app = express()
 const mongoose = require("mongoose");
 const port = process.env.PORT || 5000
+const treatment = require('./treatment.js')
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -78,6 +79,19 @@ app.get('/gethistory', (req, res, next) => {
                 message: "Error"
             })
     })
+})
+
+app.get('/getcure', (req, res, next) => {
+    var disease = req.query.disease
+    var found = treatment.getCure(disease)
+    if (!found)
+        res.status(400).send({
+            message: "Error in getting cure"
+        })
+    else
+        res.send(found)
+
+
 })
 
 app.listen(port, () => {
