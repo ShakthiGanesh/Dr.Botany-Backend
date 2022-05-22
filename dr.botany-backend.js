@@ -25,13 +25,12 @@ mongoose.connect('mongodb+srv://admin-Shakthi:shakthi007@cluster0.uxzue.mongodb.
 const historySchema = new mongoose.Schema({
     email: String,
     querypic: String,
+    plant: String,
     result: String,
     cure: String,
-    dosage: String,
-    amazon: String,
-    flipkart: String,
-    lat: String,
-    lon: String
+    detection: String,
+    impact: String,
+    date: String
 })
 
 const history = new mongoose.model("History", historySchema);
@@ -49,11 +48,10 @@ app.post('/addhistory', (req, res, next) => {
         querypic: query.querypic,
         result: query.result,
         cure: query.cure,
-        dosage: query.dosage,
-        amazon: query.amazon,
-        flipkart: query.flipkart,
-        lat: query.lat,
-        long: query.lon,
+        plant: query.plant,
+        detection: query.detection,
+        impact: query.impact,
+        date: query.date
 
     }, (err, created) => {
         if (!err) {
@@ -69,8 +67,6 @@ app.post('/addhistory', (req, res, next) => {
 
 app.get('/gethistory', (req, res, next) => {
     var email = req.query.email;
-
-    console.log(email)
     history.find({ email: email }, (err, found) => {
         if (!err)
             res.send(found)
