@@ -142,16 +142,6 @@ const treatment = [
             "Treat the acid delinted seeds with Carboxin or Carbendazim at 2 g/kg. Remove and burn the infected plant debris in the soil after deep summer ploughing during June-July. Apply increased doses of potash with a balanced dose of nitrogenous and phosphatic fertilizers. Apply heavy doses of farm yard manure or other organic manures. Follow mixed cropping with non-host plants. Grow disease resistant varieties of G. hirsutum and G. barbadense like Varalakshmi, Vijay Pratap, Jayadhar and Verum. Spot drench with Carbendazim 1g/litre.",
         medicine: "Carbendazim",
     },
-    {
-        disease: "Healthy",
-        impact:
-            "Several fungal diseases are problematic for cotton growers, including Verticillium wilt (Verticillium dahliae), damping-off (Rhizoctonia spp. and Pythium spp.), Ascochyta blight (Ascochyta gossypii), black root rot (Thielaviopsis basicola) and various leaf spots. Fusarium wilt is of particular concern to growers as the pathogen frequently causes severe economic losses and persists in fields for many years.",
-        detection:
-            "The disease affects the crop at all stages. The earliest symptoms appear on the seedlings in the cotyledons which turn yellow and then brown. The base of petiole shows brown ring, followed by wilting and drying of the seedlings. In young and grown up plants, the first symptom is yellowing of edges of leaves and area around the veins i.e. discoloration starts from the margin and spreads towards the midrib. The leaves loose their turgidity, gradually turn brown, droop and finally drop off.",
-        cure:
-            "Treat the acid delinted seeds with Carboxin or Carbendazim at 2 g/kg. Remove and burn the infected plant debris in the soil after deep summer ploughing during June-July. Apply increased doses of potash with a balanced dose of nitrogenous and phosphatic fertilizers. Apply heavy doses of farm yard manure or other organic manures. Follow mixed cropping with non-host plants. Grow disease resistant varieties of G. hirsutum and G. barbadense like Varalakshmi, Vijay Pratap, Jayadhar and Verum. Spot drench with Carbendazim 1g/litre.",
-        medicine: "Carbendazim",
-    },
     //corn
     {
         disease: "Corn_Blight",
